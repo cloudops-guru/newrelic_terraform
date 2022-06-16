@@ -1,4 +1,4 @@
-# Create NewRelic Query Language Alert
+# Create NewRelic Infra Alerts
   
  Set alert based on Queries 
 
