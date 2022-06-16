@@ -18,6 +18,9 @@ variable "provider_version"{
     default = "2.41.2"
 }
 
+variable description{
+    description =  "description"
+}
 variable event{
     description =  "event"
 }
