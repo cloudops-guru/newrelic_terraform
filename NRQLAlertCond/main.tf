@@ -27,10 +27,10 @@ resource "newrelic_nrql_alert_condition" "node-workshop-slow-txn" {
   dynamic "warning" {
     for_each = length(keys(var.warning)) == 0 ? [] : [var.warning] 
      content {
-      operator            = lookup(critical.value, "operator", null)
-      threshold           = lookup(critical.value, "threshold", null)
-      threshold_duration  = lookup(critical.value, "threshold_duration", null)
-      time_function       = lookup(critical.value, "threshold_occurrences", null)
+      operator            = lookup(warning.value, "operator", null)
+      threshold           = lookup(warning.value, "threshold", null)
+      threshold_duration  = lookup(warning.value, "threshold_duration", null)
+      time_function       = lookup(warning.value, "threshold_occurrences", null)
 
     }
   }
