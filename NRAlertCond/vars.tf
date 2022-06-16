@@ -12,10 +12,8 @@ variable "entitie_id"{
 
 variable "policy_id"{
     description = "policy_id"
-}
-variable "app_name"{
-    description = "app_name"
 } 
+
 variable "provider_version"{
     default = "2.41.2"
 }
