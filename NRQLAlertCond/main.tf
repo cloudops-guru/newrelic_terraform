@@ -33,4 +33,5 @@ resource "newrelic_nrql_alert_condition" "node-workshop-slow-txn" {
       time_function       = lookup(critical.value, "threshold_occurrences", null)
 
     }
+  }
 }
